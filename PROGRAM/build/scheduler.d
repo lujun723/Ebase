@@ -1,0 +1,10 @@
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\src\scheduler.c
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\scheduler.o: .\rtconfig.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\scheduler.o: ..\..\..\..\rt-thread-lasted\include\rthw.h

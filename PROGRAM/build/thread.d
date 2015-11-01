@@ -1,0 +1,10 @@
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\src\thread.c
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\thread.o: .\rtconfig.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\thread.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\thread.o: ..\..\..\..\rt-thread-lasted\include\rthw.h

@@ -1,0 +1,14 @@
+.\build\serial.o: F:\rt-thread-lasted\components\drivers\serial\serial.c
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rthw.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\serial.o: .\rtconfig.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\serial.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\serial.o: F:\rt-thread-lasted\components\drivers\include\rtdevice.h
+.\build\serial.o: F:\rt-thread-lasted\components\drivers\include\drivers/serial.h
+.\build\serial.o: F:\rt-thread-lasted\components\drivers\include\drivers/pin.h
+.\build\serial.o: F:\rt-thread-lasted\components\drivers\include\rtdevice.h

@@ -1,0 +1,9 @@
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\libcpu\arm\cortex-m4\cpuport.c
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\cpuport.o: .\rtconfig.h
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\cpuport.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\cpuport.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h

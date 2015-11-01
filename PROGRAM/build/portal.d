@@ -1,0 +1,13 @@
+.\build\portal.o: F:\rt-thread-lasted\components\drivers\src\portal.c
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\portal.o: .\rtconfig.h
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\portal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\portal.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\portal.o: F:\rt-thread-lasted\components\drivers\include\rtdevice.h
+.\build\portal.o: F:\rt-thread-lasted\components\drivers\include\drivers/serial.h
+.\build\portal.o: F:\rt-thread-lasted\components\drivers\include\drivers/pin.h
+.\build\portal.o: F:\rt-thread-lasted\components\drivers\include\rtdevice.h

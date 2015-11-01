@@ -1,0 +1,10 @@
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\src\clock.c
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rthw.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\clock.o: .\rtconfig.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\clock.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\clock.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h

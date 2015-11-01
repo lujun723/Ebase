@@ -1,0 +1,9 @@
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\libcpu\arm\common\showmem.c
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\showmem.o: .\rtconfig.h
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\showmem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\showmem.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h

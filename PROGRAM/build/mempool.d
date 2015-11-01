@@ -1,0 +1,10 @@
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\src\mempool.c
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rthw.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\mempool.o: .\rtconfig.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\mempool.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\mempool.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h

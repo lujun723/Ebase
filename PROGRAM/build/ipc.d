@@ -1,0 +1,10 @@
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\src\ipc.c
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\ipc.o: .\rtconfig.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtdebug.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtdef.h
+.\build\ipc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtservice.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtm.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rtthread.h
+.\build\ipc.o: ..\..\..\..\rt-thread-lasted\include\rthw.h
