@@ -147,7 +147,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>-1</TargetSelection>
+          <TargetSelection>1</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -161,7 +161,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>STLink\ST-LINKIII-KEIL.dll</Driver>
+            <Driver>BIN\UL2CM3.DLL</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.;..\..\..\..\rt-thread-lasted\components\finsh;..\..\..\..\rt-thread-lasted\include;..\..\..\..\rt-thread-lasted\libcpu\arm\common;..\..\..\..\rt-thread-lasted\libcpu\arm\cortex-m4;Libraries\CMSIS\Include;Libraries\CMSIS\ST\STM32F4xx\Include;Libraries\STM32F4xx_StdPeriph_Driver\inc;applications;drivers;..\..\..\..\rt-thread-lasted;F:\rt-thread-lasted\components\drivers\include</IncludePath>
+              <IncludePath>.;..\..\..\..\rt-thread-lasted\components\finsh;..\..\..\..\rt-thread-lasted\include;..\..\..\..\rt-thread-lasted\libcpu\arm\common;..\..\..\..\rt-thread-lasted\libcpu\arm\cortex-m4;Libraries\CMSIS\Include;Libraries\CMSIS\ST\STM32F4xx\Include;Libraries\STM32F4xx_StdPeriph_Driver\inc;applications;drivers;..\..\..\..\rt-thread-lasted;F:\rt-thread-lasted\components\drivers\include;.\ebase_drivers</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -418,6 +418,11 @@
               <FileType>1</FileType>
               <FilePath>applications\startup.c</FilePath>
             </File>
+            <File>
+              <FileName>debug_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\debug_led.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -437,6 +442,31 @@
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>drivers\usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Ebase_Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f4_GPIO_Drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ebase_drivers\stm32f4_GPIO_Drv.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>core_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\core_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\platform.c</FilePath>
             </File>
           </Files>
         </Group>

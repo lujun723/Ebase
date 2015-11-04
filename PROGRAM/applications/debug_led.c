@@ -105,14 +105,14 @@ static void rt_thread_entry_heartbeat(void* parameter)
     }
 }
 
-int nano_board_heartbeat_init(void)
+int nano_board_heartbeat_init(uint8_t prio)
 {
     rt_thread_init(&thread_heartbeat,
                    "heartbeat",
                    rt_thread_entry_heartbeat,
                    RT_NULL,
                    &thread_heartbeat_stack[0],
-                   sizeof(thread_heartbeat_stack),25,5);
+                   sizeof(thread_heartbeat_stack),prio,5);
     rt_thread_startup(&thread_heartbeat);
 
     return 0;

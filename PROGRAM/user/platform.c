@@ -19,15 +19,35 @@
 
 /*	Includes -------------------------------------------------------*/
 #include <rtthread.h>
+#include "stm32f4xx.h"
+
 /*	Global variables -----------------------------------------------*/
-extern int nano_board_heartbeat_init(void);
+extern int nano_board_heartbeat_init(uint8_t prio);
 extern int core_test_init(void);
 /*	Private typedef ------------------------------------------------*/
 /*	Private define -------------------------------------------------*/
 /*	Private macro --------------------------------------------------*/
 /*	Private variables ----------------------------------------------*/
-
+enum
+{
+	BLUETOOTH_PRIO=5,
+	RS232_PRIO,
+	DATABACK_PRIO,
+	PROTOCOL_PRIO,
+	ADC_PRIO,
+	BATTERY_PRIO,
+	SLEEVEPRESSURE_PRIO,
+	SLEEVEPOSITION_PRIO,
+	EPULSE_PRIO,
+	HEARTBEAT_PRIO,
+	TOUCH_PRIO,
+	DETECT_PRIO,
+	SENSORSTATE_PRIO,
+	LED_PRIO,
+	DEBUG_PRIO
+}PRIORITY;
 /*	Private function prototypes ------------------------------------*/
+extern int nano_board_heartbeat_init(uint8_t prio);
 /*	Private fuctions -----------------------------------------------*/
 
 /**
@@ -46,8 +66,8 @@ extern int core_test_init(void);
 	*/
 void platform_init(void)
 {
-	nano_board_heartbeat_init();//25
-	//core_test_init();
+	nano_board_heartbeat_init(LED_PRIO);//25
+
 }
 
 

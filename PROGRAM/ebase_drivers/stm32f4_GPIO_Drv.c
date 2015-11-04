@@ -118,9 +118,10 @@ void GPIO_Pin_Write(uint8_t GPIOx,uint8_t Pinx,uint8_t value)
 
 int GPIO_Pin_Read(uint8_t GPIOx,uint8_t Pinx)
 {
+	int value;
 	GPIO_TypeDef *GPIO_PORT_X;
 	GPIO_PORT_X = GPIO_PORT[GPIOx];
-	int value;
+	
 
 	if (Pinx!=ALL)
 	{
@@ -162,9 +163,9 @@ int GPIO_Pin_Read(uint8_t GPIOx,uint8_t Pinx)
 		}
 		else
 		{
-			return;
+			return -1;
 		}
-		return;
+		return -1;
 	}
 
 	return value;

@@ -27,6 +27,8 @@
 #include <gdb_stub.h>
 #endif
 
+extern void platform_init(void);
+
 void rt_init_thread_entry(void* parameter)
 {
     /* GDB STUB */
@@ -50,6 +52,9 @@ void rt_init_thread_entry(void* parameter)
         rt_kprintf("TCP/IP initialized!\n");
     }
 #endif
+	
+//init head main board devices
+	platform_init();
 }
 
 int rt_application_init()
