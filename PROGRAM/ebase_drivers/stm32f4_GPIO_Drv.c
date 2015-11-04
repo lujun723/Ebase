@@ -47,6 +47,8 @@ GPIOPuPd_TypeDef GPIO_PUPD[3]={GPIO_PuPd_NOPULL,GPIO_PuPd_UP,GPIO_PuPd_DOWN};
 */
 static void GPIO_CLK_Init(uint8_t A_TO_I)
 {
+	RT_ASSERT(A_TO_I<=8&&A_TO_I>=0);
+	
 	switch (A_TO_I)
 	{
 	case A:
@@ -86,6 +88,12 @@ void GPIO_Pin_Setup(uint8_t GPIOx,uint8_t Pinx,uint8_t OUT_IN_AF_AN, uint8_t PP_
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_TypeDef *GPIO_PORT_X;
 
+	RT_ASSERT(GPIOx<=8&&GPIOx>=0);
+	RT_ASSERT(Pinx<=17&&Pinx>=0);
+	RT_ASSERT(OUT_IN_AF_AN<=3&&OUT_IN_AF_AN>=0);
+	RT_ASSERT(PP_OD<=1&&PP_OD>=0);
+	RT_ASSERT(PullUp_PullDown<=2&&PullUp_PullDown>=0);
+	
 	GPIO_PORT_X = GPIO_PORT[GPIOx];
 	GPIO_CLK_Init(GPIOx);
 	GPIO_InitStructure.GPIO_Mode  = GPIO_MODE[OUT_IN_AF_AN];
@@ -102,6 +110,10 @@ void GPIO_Pin_Write(uint8_t GPIOx,uint8_t Pinx,uint8_t value)
 	GPIO_TypeDef *GPIO_PORT_X;
 	GPIO_PORT_X = GPIO_PORT[GPIOx];
 
+	RT_ASSERT(GPIOx<=8&&GPIOx>=0);
+	RT_ASSERT(Pinx<=17&&Pinx>=0);
+	RT_ASSERT(value==1||value==0);
+	
 	if (value==1)
 	{
 		GPIO_SetBits(GPIO_PORT_X,GPIO_PIN[Pinx]);
@@ -109,10 +121,6 @@ void GPIO_Pin_Write(uint8_t GPIOx,uint8_t Pinx,uint8_t value)
 	else if(value==0)
 	{
 		GPIO_ResetBits(GPIO_PORT_X,GPIO_PIN[Pinx]);
-	}
-	else
-	{
-		return;
 	}
 }
 
@@ -122,6 +130,8 @@ int GPIO_Pin_Read(uint8_t GPIOx,uint8_t Pinx)
 	GPIO_TypeDef *GPIO_PORT_X;
 	GPIO_PORT_X = GPIO_PORT[GPIOx];
 	
+	RT_ASSERT(GPIOx<=8&&GPIOx>=0);
+	RT_ASSERT(Pinx<=17&&Pinx>=0);
 
 	if (Pinx!=ALL)
 	{
@@ -174,8 +184,12 @@ int GPIO_Pin_Read(uint8_t GPIOx,uint8_t Pinx)
 void GPIO_Pin_Toggle(uint8_t GPIOx,uint8_t Pinx)
 {
 	GPIO_TypeDef *GPIO_PORT_X;
+	
+	RT_ASSERT(GPIOx<=8&&GPIOx>=0);
+	RT_ASSERT(Pinx<=17&&Pinx>=0);
+	
 	GPIO_PORT_X = GPIO_PORT[GPIOx];
-
+	
 	GPIO_ToggleBits(GPIO_PORT_X,GPIO_PIN[Pinx]);
 }
 
